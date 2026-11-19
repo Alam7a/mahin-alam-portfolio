@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mahin Alam | PhD Researcher, AV Testing and Validation</title>
+<meta name="description" content="PhD researcher at the University of Windsor working on automated vehicle testing and validation, simulation, and vehicle trajectory analytics.">
+<meta name="theme-color" content="#0B0B10">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0B0B10; --card:#14141B; --line:#26262F; --fg:#F5F5F7; --muted:#A1A1AA; --accent:#FF4D6D; --accent-soft:rgba(255,77,109,.12);
+  --head:'Space Grotesk',system-ui,sans-serif; --body:'Archivo',system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 1rem/1.65 var(--body);-webkit-font-smoothing:antialiased}
+a{color:var(--fg);text-decoration-color:var(--accent);text-underline-offset:3px}
+a:hover{color:var(--accent)}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+svg.i{width:28px;height:28px;fill:none;stroke:var(--accent);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+
+/* nav */
+header{position:sticky;top:0;z-index:10;background:rgba(11,11,16,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;min-height:64px;gap:12px}
+.brand{font:700 1.05rem var(--head);text-decoration:none;letter-spacing:.02em}
+.brand b{color:var(--accent)}
+nav ul{display:flex;gap:2px;list-style:none;margin:0;padding:0}
+nav a{display:block;padding:12px 10px;font-size:.9rem;color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--fg)}
+.join{padding:10px 18px;background:var(--accent);color:#0B0B10!important;font-weight:700;border-radius:999px;text-decoration:none;font-size:.9rem;white-space:nowrap}
+.join:hover{background:#fff}
+details.menu{display:none}
+details.menu summary{list-style:none;cursor:pointer;padding:12px;min-width:44px;min-height:44px;color:var(--fg);font-weight:600}
+details.menu summary::-webkit-details-marker{display:none}
+details.menu ul{position:absolute;right:16px;top:64px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:8px;list-style:none;margin:0;min-width:200px}
+details.menu a{display:block;padding:12px 14px;text-decoration:none;color:var(--fg)}
+
+/* hero */
+.hero{padding:88px 0 80px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;right:-140px;top:-140px;width:520px;height:520px;background:radial-gradient(circle,rgba(255,77,109,.22),transparent 65%);pointer-events:none}
+.hero .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:56px;align-items:center;position:relative}
+.eyebrow{font:500 .85rem var(--head);letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0 0 18px}
+h1{font:700 clamp(2.8rem,7.5vw,5.6rem)/1 var(--head);letter-spacing:-.035em;margin:0 0 24px}
+.role{font:500 clamp(1.1rem,2.2vw,1.45rem)/1.45 var(--head);margin:0 0 10px;max-width:640px}
+.meta{color:var(--muted);margin:0 0 32px}
+.btn{display:inline-block;padding:13px 24px;border-radius:999px;font-weight:700;text-decoration:none;transition:background .2s,color .2s,border-color .2s}
+.btn.solid{background:var(--accent);color:#0B0B10}
+.btn.solid:hover{background:#fff;color:#0B0B10}
+.btn.line{border:1px solid var(--line);margin-left:10px}
+.btn.line:hover{border-color:var(--accent);color:var(--accent)}
+.portrait{margin:0}
+.portrait img{display:block;width:100%;height:auto;border-radius:20px;border:1px solid var(--line)}
+
+/* sections */
+section{padding:80px 0}
+.label{font:500 .85rem var(--head);letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0 0 12px}
+h2{font:700 clamp(1.9rem,4vw,2.9rem)/1.1 var(--head);letter-spacing:-.02em;margin:0 0 20px;max-width:760px}
+.lead{color:var(--muted);max-width:720px;font-size:1.1rem;margin:0}
+.grid{display:grid;gap:20px;margin-top:36px}
+.g4{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.g2{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px;transition:border-color .25s,transform .25s}
+.card:hover{border-color:rgba(255,77,109,.55);transform:translateY(-3px)}
+.card h3{font:600 1.2rem var(--head);margin:14px 0 6px}
+.card p{margin:0;color:var(--muted);font-size:.98rem}
+
+/* stats */
+.stats{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:48px 0;background:#0E0E14}
+.stats .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px}
+.stat b{display:block;font:700 clamp(2.6rem,6vw,3.8rem)/1 var(--head)}
+.stat b{color:var(--accent)}
+.stat span{color:var(--muted);font-size:.95rem}
+
+/* about */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.about img,.strip img{width:100%;height:auto;display:block;border-radius:16px;border:1px solid var(--line)}
+figcaption{color:var(--muted);font-size:.85rem;margin-top:8px}
+figure{margin:0}
+
+/* projects */
+.proj .tag{display:inline-block;font:600 .75rem var(--head);letter-spacing:.1em;text-transform:uppercase;color:var(--accent);background:var(--accent-soft);padding:3px 12px;border-radius:999px}
+.proj h3{font-size:1.4rem}
+.proj .sub{margin:0 0 14px}
+dl{display:grid;grid-template-columns:110px 1fr;gap:10px 18px;margin:0;font-size:.95rem}
+dt{font-weight:600}
+dd{margin:0;color:var(--muted)}
+
+/* lists */
+ul.rows{list-style:none;margin:32px 0 0;padding:0}
+ul.rows li{display:grid;grid-template-columns:170px 1fr;gap:24px;padding:20px 0;border-top:1px solid var(--line)}
+ul.rows li:last-child{border-bottom:1px solid var(--line)}
+ul.rows .k{font:600 .95rem var(--head);color:var(--accent)}
+ul.rows b{display:block;font-weight:600}
+ul.rows span{color:var(--muted);font-size:.93rem}
+.strip{margin-top:36px}
+
+/* timeline */
+.tl{list-style:none;margin:36px 0 0;padding:0 0 0 28px;border-left:2px solid var(--line)}
+.tl li{position:relative;padding:0 0 28px 8px}
+.tl li::before{content:"";position:absolute;left:-37px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:3px solid var(--accent)}
+.tl .y{font:600 .9rem var(--head);color:var(--accent)}
+.tl b{display:block;font-weight:600}
+.tl span{color:var(--muted);font-size:.93rem}
+
+/* ticker */
+.ticker{border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;padding:22px 0;background:#0E0E14}
+.ticker .track{display:flex;gap:48px;width:max-content;animation:slide 40s linear infinite;font:600 1.1rem var(--head);color:var(--muted);white-space:nowrap}
+.ticker .track span::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--accent);margin-right:14px}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+.contact a.big{font:600 clamp(1.3rem,3vw,1.9rem) var(--head)}
+.contact p{margin:0 0 10px}
+footer{padding:32px 0;color:var(--muted);font-size:.88rem;border-top:1px solid var(--line)}
+
+.reveal{opacity:0;transform:translateY(12px);transition:opacity .4s ease-out,transform .4s ease-out}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+  .ticker .track{animation:none;flex-wrap:wrap;width:auto;padding:0 24px;white-space:normal}
+  .ticker .track [aria-hidden]{display:none}
+  .card,.btn{transition:none}
+}
+@media (max-width:860px){
+  nav{display:none}
+  details.menu{display:block}
+  .hero{padding:56px 0 56px}
+  .hero .wrap,.about{grid-template-columns:1fr;gap:32px}
+  .portrait{max-width:340px}
+  section{padding:60px 0}
+  ul.rows li{grid-template-columns:1fr;gap:4px}
+  dl{grid-template-columns:1fr;gap:2px}
+  dt{margin-top:10px}
+  .btn.line{margin:12px 0 0}
+  .join{display:none}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-car" viewBox="0 0 24 24"><path d="M5 16V11l2-5h10l2 5v5"/><path d="M3 16h18v3H3z"/><circle cx="7.5" cy="19" r="0.01"/><path d="M5 11h14"/></symbol>
+  <symbol id="i-cube" viewBox="0 0 24 24"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z"/><path d="M12 12l8-4.5M12 12v9M12 12L4 7.5"/></symbol>
+  <symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18H15a3 3 0 000-6H9a3 3 0 010-6h6.5"/></symbol>
+  <symbol id="i-net" viewBox="0 0 24 24"><circle cx="12" cy="5" r="2.5"/><circle cx="5" cy="19" r="2.5"/><circle cx="19" cy="19" r="2.5"/><path d="M12 7.5v4M12 11.5l-5.5 5.5M12 11.5l5.5 5.5"/></symbol>
+</svg>
+
+<header><div class="wrap">
+  <a class="brand" href="#top">Mahin<b>.</b>Alam</a>
+  <nav aria-label="Main"><ul>
+    <li><a href="#about">About</a></li><li><a href="#projects">Projects</a></li><li><a href="#papers">Papers</a></li><li><a href="#teaching">Teaching</a></li><li><a href="#journey">Journey</a></li><li><a href="#example">Work</a></li>
+  </ul></nav>
+  <a class="join" href="#contact">Contact</a>
+  <details class="menu"><summary aria-label="Open menu">Menu</summary>
+    <ul><li><a href="#about">About</a></li><li><a href="#projects">Projects</a></li><li><a href="#papers">Papers</a></li><li><a href="#teaching">Teaching</a></li><li><a href="#journey">Journey</a></li><li><a href="#example">Work</a></li><li><a href="#contact">Contact</a></li></ul>
+  </details>
+</div></header>
+
+<main id="top">
+<section class="hero"><div class="wrap">
+  <div>
+    <p class="eyebrow">PhD Researcher, University of Windsor</p>
+    <h1>Mahin Alam</h1>
+    <p class="role">Automated Vehicle (AV/ADS) Testing &amp; Validation. Intelligent Transportation Systems and Vehicle Trajectory Analytics.</p>
+    <p class="meta">Simulation: CARLA, RoadRunner, MATLAB</p>
+    <a class="btn solid" href="tool.html">Open the AV approval tool</a><a class="btn line" href="#contact">Contact</a>
+  </div>
+  <figure class="portrait"><img src="img/portrait.jpg" width="840" height="1191" alt="Mahin Alam standing beside the University of Windsor shield sign on campus" fetchpriority="high"></figure>
+</div></section>
+
+<div class="stats"><div class="wrap">
+  <div class="stat"><b data-count="6">6</b><span>courses assisted as a teaching assistant</span></div>
+  <div class="stat"><b data-count="5">5</b><span>students guided on the AV project</span></div>
+  <div class="stat"><b data-count="2">2</b><span>accepted CTRF 2026 papers</span></div>
+  <div class="stat"><b data-count="2">2</b><span>published papers, 2022 and 2023</span></div>
+</div></div>
+
+<section id="areas"><div class="wrap">
+  <p class="label reveal">Research areas</p>
+  <h2 class="reveal">Testing automated driving systems, and learning from vehicle trajectories.</h2>
+  <div class="grid g4">
+    <div class="card reveal"><svg class="i" aria-hidden="true"><use href="#i-car"/></svg><h3>AV and ADS testing</h3><p>Scenario-based testing and validation of automated driving systems on highways.</p></div>
+    <div class="card reveal"><svg class="i" aria-hidden="true"><use href="#i-cube"/></svg><h3>Simulation</h3><p>Virtual testing with CARLA, RoadRunner and MATLAB.</p></div>
+    <div class="card reveal"><svg class="i" aria-hidden="true"><use href="#i-route"/></svg><h3>Trajectory analytics</h3><p>Vehicle trajectory data for traffic corridor optimization.</p></div>
+    <div class="card reveal"><svg class="i" aria-hidden="true"><use href="#i-net"/></svg><h3>Intelligent transportation systems</h3><p>Traffic data modeling and driver behaviour.</p></div>
+  </div>
+</div></section>
+
+<section id="about" style="padding-top:0"><div class="wrap about">
+  <div class="reveal">
+    <p class="label">About</p>
+    <h2>PhD student in Civil Engineering.</h2>
+    <p class="lead">I am a PhD student at the University of Windsor, supervised by Dr. Yong Hoon Kim. I started the program in May 2026. My research is in intelligent transportation systems. I test and validate automated driving systems in simulation, and I use vehicle trajectory analytics for traffic corridor optimization.</p>
+  </div>
+  <figure class="reveal"><img src="img/convocation.jpg" width="1100" height="793" alt="Mahin Alam in convocation gown holding the convocation program" loading="lazy"><figcaption>Convocation, University of Windsor</figcaption></figure>
+</div></section>
+
+<section id="projects" style="padding-top:0"><div class="wrap">
+  <p class="label reveal">Current projects</p>
+  <h2 class="reveal">What I am working on now.</h2>
+  <div class="grid g2">
+    <article class="card proj reveal">
+      <span class="tag">Active, 2026-27</span>
+      <h3>Autonomous Vehicle Highway Test Schedule</h3>
+      <p class="sub">Funded through NSERC Alliance and the Highway Infrastructure Innovation Funding Program (HIIFP), in partnership with the Ontario Ministry of Transportation. PI: Dr. Lucas Bruck. Co-PI: Dr. Yong Hoon Kim.</p>
+      <dl>
+        <dt>Objective</dt><dd>Develop a framework to test and evaluate automated driving systems on Ontario highways, including winter conditions.</dd>
+        <dt>Approach</dt><dd>Simulation-based scenario design and evaluation, using human driver performance as a benchmark.</dd>
+        <dt>Contribution</dt><dd>Researcher and Project Manager. I guide four undergraduate research assistants and one MASc student.</dd>
+      </dl>
+    </article>
+    <article class="card proj reveal">
+      <span class="tag">In progress, Year 1</span>
+      <h3>Trajectory-based traffic corridor optimization</h3>
+      <p class="sub">My PhD research, supervised by Dr. Yong Hoon Kim.</p>
+      <dl>
+        <dt>Objective</dt><dd>Improve the operation of traffic corridors using vehicle trajectory data.</dd>
+        <dt>Approach</dt><dd>Vehicle trajectory analytics and modeling.</dd>
+        <dt>Contribution</dt><dd>Lead researcher on this topic.</dd>
+      </dl>
+    </article>
+  </div>
+</div></section>
+
+<section id="papers" style="padding-top:0"><div class="wrap">
+  <p class="label reveal">Papers and presentations</p>
+  <h2 class="reveal">Publications and conference work.</h2>
+  <ul class="rows">
+    <li class="reveal"><span class="k">2027, submitted</span><div><b>Simulation-Based Winter Evaluation of Automated Driving Systems on Ontario Highways Using Human Driver Performance as a Benchmark</b><span>CTRF 2027, submission 275. M. Alam, L. Bruck, Y. H. Kim, A. Dimov, M. Al-Hashimi, J. Paliwoda, L. M. Pineros.</span></div></li>
+    <li class="reveal"><span class="k">2026, accepted</span><div><b>Demand-Seeking or Demand Avoiding? A Functional Classification of Taxi Driver Behaviour</b><span>CTRF 2026, paper 382. M. Alam, F. B. Memon, Y. H. Kim.</span></div></li>
+    <li class="reveal"><span class="k">2026, accepted</span><div><b>Staged Capacity Expansion of Urban Air Mobility Vertiports Using Embedded Flexibility</b><span>CTRF 2026, paper 582. F. B. Memon, M. Alam, Y. H. Kim.</span></div></li>
+    <li class="reveal"><span class="k">2026, posters</span><div><b>Two posters on AV verification under Canadian conditions</b><span>ITE Canada District Mini Conference. I led and coordinated the work, presented by student team members: "A Study on Winter Conditions and Scenarios for AV Testing Framework" (A. Dimov) and "A Virtual Framework for Assessment and Validation of ADS" (J. Paliwoda and M. Al-Hashimi).</span></div></li>
+    <li class="reveal"><span class="k">2023, published</span><div><b>Reusing Waste Plastics in Aggregate for Road Construction</b><span>Airfield and Highway Pavements 2023, ASCE.</span></div></li>
+    <li class="reveal"><span class="k">2022, published</span><div><b>The Role of Bhandari (Treasure Hunters) in Resource Recovery from Municipal Solid Waste in Dhaka, Bangladesh</b><span>Proceedings of the 6th Symposium on Circular Economy and Urban Mining (SUM 2022), Capri, Italy.</span></div></li>
+  </ul>
+</div></section>
+
+<div class="ticker" aria-label="Institutions and venues">
+  <div class="track">
+    <span>University of Windsor</span><span>Ontario Ministry of Transportation</span><span>NSERC Alliance</span><span>HIIFP</span><span>ITE Canada</span><span>CTRF</span><span>ASCE</span><span>SUM, Capri</span><span>North South University</span>
+    <span aria-hidden="true">University of Windsor</span><span aria-hidden="true">Ontario Ministry of Transportation</span><span aria-hidden="true">NSERC Alliance</span><span aria-hidden="true">HIIFP</span><span aria-hidden="true">ITE Canada</span><span aria-hidden="true">CTRF</span><span aria-hidden="true">ASCE</span><span aria-hidden="true">SUM, Capri</span><span aria-hidden="true">North South University</span>
+  </div>
+</div>
+
+<section id="teaching"><div class="wrap">
+  <p class="label reveal">Teaching</p>
+  <h2 class="reveal">Teaching assistant in transportation and engineering courses.</h2>
+  <figure class="strip reveal"><img src="img/teaching.jpg" width="1100" height="550" alt="Mahin Alam writing on a whiteboard while teaching" loading="lazy"><figcaption>Teaching at the whiteboard</figcaption></figure>
+  <ul class="rows">
+    <li class="reveal"><span class="k">University of Windsor</span><div><b>Graduate Teaching Assistant, CIVL-4940 Transportation Systems Analysis</b><span>Summer 2026</span></div></li>
+    <li class="reveal"><span class="k">University of Windsor</span><div><b>Graduate Teaching Assistant, CIVL-3650 Transportation and Traffic Engineering</b><span>Summer 2025, Fall 2025, Fall 2026</span></div></li>
+    <li class="reveal"><span class="k">University of Windsor</span><div><b>Graduate Teaching Assistant, GENG-1110 Engineering Mechanics 1, and GENG-8020 Engineering Project Management</b><span>Winter 2025</span></div></li>
+    <li class="reveal"><span class="k">North South University</span><div><b>Teaching Assistant, CEE373 Sanitation and Wastewater Management, and CEE310 Quantity Survey and Cost Analysis</b><span>2021 to 2022</span></div></li>
+  </ul>
+</div></section>
+
+<section id="leadership" style="padding-top:0"><div class="wrap">
+  <p class="label reveal">Leadership and service</p>
+  <h2 class="reveal">Clubs, outreach and community.</h2>
+  <ul class="rows">
+    <li class="reveal"><span class="k">Current</span><div><b>Vice President, ITE University of Windsor Student Chapter</b><span>Institute of Transportation Engineers</span></div></li>
+    <li class="reveal"><span class="k">North South University</span><div><b>Vice President, Ethics and Diversity Club</b></div></li>
+    <li class="reveal"><span class="k">North South University</span><div><b>Executive Board member, Photography Club</b></div></li>
+    <li class="reveal"><span class="k">Community</span><div><b>Youth volunteer, Letter Grade</b></div></li>
+    <li class="reveal"><span class="k">Community</span><div><b>Outreach, Quantum Blood Foundation</b></div></li>
+    <li class="reveal"><span class="k">College</span><div><b>Cadet, Bangladesh National Cadet Corps (BNCC)</b><span>Rank: Lance Corporal</span></div></li>
+  </ul>
+</div></section>
+
+<section id="journey" style="padding-top:0"><div class="wrap">
+  <p class="label reveal">Journey</p>
+  <h2 class="reveal">Education and career.</h2>
+  <ol class="tl">
+    <li class="reveal"><span class="y">May 2026</span><b>PhD, Civil Engineering</b><span>University of Windsor. Supervisor: Dr. Yong Hoon Kim.</span></li>
+    <li class="reveal"><span class="y">Jan 2025</span><b>MASc, Civil Engineering</b><span>University of Windsor.</span></li>
+    <li class="reveal"><span class="y">Sep 2023 to Dec 2024</span><b>MEng, Civil Engineering</b><span>University of Windsor.</span></li>
+    <li class="reveal"><span class="y">May 2022 to Jun 2023</span><b>Assistant Engineer, M. M. Construction Services Ltd.</b><span>Structural analysis and design of RCC structures; quantity take-offs and technical documentation.</span></li>
+    <li class="reveal"><span class="y">Aug 2021 to Mar 2022</span><b>Intern, Civic Construction Limited</b><span>Site coordination and quantity take-offs.</span></li>
+    <li class="reveal"><span class="y">Apr 2018 to Apr 2022</span><b>BSc, Civil and Environmental Engineering</b><span>North South University, Bangladesh.</span></li>
+  </ol>
+</div></section>
+
+<section id="example" style="padding-top:0"><div class="wrap">
+  <p class="label reveal">Work example</p>
+  <h2 class="reveal">AV approval tool.</h2>
+  <p class="lead reveal">A web tool I built for the project. Compare how each country approves AV applications, design test scenarios on a road with up to six sections, and run the calculators for gaps, acceleration and stopping distance.</p>
+  <p class="reveal" style="margin-top:28px"><a class="btn solid" href="tool.html">Open the tool</a></p>
+</div></section>
+
+<section id="contact" class="contact" style="padding-top:0"><div class="wrap reveal">
+  <p class="label">Contact</p>
+  <h2>Get in touch.</h2>
+  <p><a class="big" href="mailto:alam7a@uwindsor.ca">alam7a@uwindsor.ca</a></p>
+  <p><a class="big" href="https://www.linkedin.com/in/mahin-alam18/" rel="noopener">linkedin.com/in/mahin-alam18</a></p>
+  <p style="color:var(--muted);margin-top:16px">Department of Civil and Environmental Engineering, University of Windsor, Windsor, Ontario, Canada.</p>
+</div></section>
+</main>
+
+<footer><div class="wrap">&copy; 2026 Mahin Alam</div></footer>
+
+<script>
+(function(){
+  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.1});
+  els.forEach(function(e){io.observe(e)});
+  // count-up for the four numbers; final value is already in the HTML
+  if(reduce)return;
+  var co=new IntersectionObserver(function(en){en.forEach(function(x){
+    if(!x.isIntersecting)return; co.unobserve(x.target);
+    var n=+x.target.dataset.count,t0=null;
+    (function f(t){t0=t0||t;var p=Math.min((t-t0)/900,1);x.target.firstChild.nodeValue=Math.round(n*p);if(p<1)requestAnimationFrame(f)})(performance.now());
+  })},{threshold:.6});
+  document.querySelectorAll('[data-count]').forEach(function(e){co.observe(e)});
+})();
+</script>
+</body>
+</html>
